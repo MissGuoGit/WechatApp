@@ -1,0 +1,22 @@
+<!--pages/cooker/cooker.wxml-->
+<!--pages/cooker/cooker.wxml-->
+<view class="searchbox">
+  <image src="/pages/img/s3.png" mode="widthFix"/>
+  <input type="text" placeholder="西餐、王师傅" value="{{cookerkey}}" bindinput="fnsearchinputchange"/>
+</view>
+<view class="listbox">
+<!-- 单个厨师开始 -->
+    <block wx:for="{{cookerlist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+    <view class="fooditem" hover-class="itemhover" data-id="{{item.id}}" bindtap="fngotocookerview">
+        <image src="http://127.0.0.1:8000/static/uploadimg/{{item.imgurl}}" mode="widthFix"/>
+        <view class="rightbox">
+            <view class="line1">{{item.cookername}}</view>
+            <view class="line2">{{item.cookerlevel}}</view>            
+            <view class="line4"><text>精品</text><text>优选</text><text>热销</text></view>
+        </view>
+    </view>
+    </block> 
+<!--单个厨师结束  -->
+
+</view>
+

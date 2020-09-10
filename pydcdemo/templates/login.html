@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>	重庆工商大学融智学院软件工程班级信息发布系统V1.0</title>
+<!--	<link rel="stylesheet" type="text/css" href="/static/myadmin/css/comm.css" />-->
+    <link rel="stylesheet" type="text/css" href="/static/myadmin/css/login.css"/>
+	<style type="text/css">
+
+    </style>
+</head>
+<body class="aaa">
+    <form name="form1" method="post" action="/loginpost/" id="form1">
+        {% csrf_token %}
+    	<div id="logincontainer">
+			<h3 class="title">春风食里点餐系统v1.0</h3>
+			<div class="loginform">
+				<p id="msg">{{msg}}</p>
+				<p> <span class="lablespan">用户名:</span><span><input name="username" type="text" id="username" /></span></p>
+				<p> <span class="lablespan">密    码:</span><span><input name="password" type="password" id="password" /></span> </p>
+				<p><span><input type="submit" name="btnlogin" value="登 录" id="btnlogin" /></span></p>
+			</div>
+		</div>
+    </form>
+    <script src="/static/myadmin/js/jquery-1.11.0.js"></script>
+    <script>
+        $("#btnlogin").click(function (e) {
+            var username = $("#username");
+            if (!username.val().length > 0)
+            {
+                $("#msg").text("请输入用户名");
+                username.focus();
+                e.preventDefault();
+                return false;
+            }
+
+            var password = $("#password");
+            if (!password.val().length > 0) {
+                $("#msg").text("请输入密码");
+                password.focus();
+                e.preventDefault();
+                return false;
+            }
+        });
+    </script>
+</body>
+</html>

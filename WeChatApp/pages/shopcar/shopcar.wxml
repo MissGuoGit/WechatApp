@@ -1,0 +1,36 @@
+<!--pages/shopcar/shopcar.wxml-->
+<view class="container">
+	<view class="listbox">
+		<block wx:for="{{carfoodlist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+			<view class="fooditem" hover-class="itemhover">
+				<image src="{{item.imgurl}}" mode="widthFix" />
+				<view class="rightbox">
+					<view class="line1">{{item.proname}}</view>
+					<view class="line2">{{item.brief}}</view>
+					<view class="line3">￥{{item.price}}.00/份</view>
+					<view class="line4"><text data-id="{{item.id}}" bindtap="fnjian">-</text><text>{{item.procount}}</text><text data-id="{{item.id}}" bindtap="fnjia">+</text> </view>
+					<image src="/pages/img/cooker(2).png" data-id="{{item.id}}" bindtap="fndeleteitembyid" mode="widthFix"  class="btndel"/>
+				</view>
+			</view>
+    </block>  
+		<view class="pricebox">总价：￥{{sumprice}}.00</view>
+		<view class="msg">{{msg}}</view>
+	</view>
+  <view class="sendinfobox" style="display:{{isshowpersoninfo}}">
+			<view class="btngotobuy" hover-class="hoverclass" bindtap="fnback">返回</view>
+      <view class="foodformbox">
+          <view class="fline">客户姓名：<input type="text" bindinput="fnsname" value="{{sname}}" placeholder="必填" /></view>
+          <view class="fline">客户电话：<input type="text" bindinput="fntel" value="{{stel}}" placeholder="必填" /></view>
+          <view class="fline">烹饪时间：
+					<picker mode="date" value="{{date}}" start="2020-01-01" end="2030-01-01" bindchange="bindDateChange"><input type="text"  value="{{ptime}}" placeholder="可选" />
+  				</picker>
+
+					</view>
+          <view class="fline">送货地点：<input type="text" bindinput="fnaddress"   value="{{saddress}}" placeholder="楼栋、单元、门牌"/></view>
+          <view class="fline">备注信息：<input type="text" bindinput="fnmemo" placeholder="可选" /></view>
+      </view>
+			<view class="pricebox">总价：￥{{sumprice}}.00</view>
+  </view>
+  <view class="btngotobuy" hover-class="hoverclass" bindtap="fntap">{{btntxt}}</view>
+	
+</view>

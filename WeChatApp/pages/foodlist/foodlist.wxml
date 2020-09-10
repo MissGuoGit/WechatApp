@@ -1,0 +1,28 @@
+<!--pages/foodlist/foodlist.wxml-->
+<view class="container">
+<!-- 搜索开始 -->
+   <view class="searchbox">
+  <image src="/pages/img/s3.png" mode="widthFix"/>
+  <input type="text" placeholder="搜索菜品" value="{{key}}" bindinput="fnsearchinputchange"/>
+</view>
+    <!-- 搜索结束 -->
+    <view class="food_list">
+    <!-- 列表单个菜品 -->
+    <block wx:for="{{foodlist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+     <view class="list_item" hover-class="itemhover" data-id="{{item.id}}" bindtap="fngotofoodview">
+       <image src="http://127.0.0.1:8000/static/uploadimg/{{item.imgurl}}" mode="widthFix" />
+        <view class="food_infor">
+          <view>{{item.proname}}</view>
+          <view>经典美味，麻辣鲜香</view>
+          <view>￥{{item.price}}/份</view>
+          <view class="text">
+            <text>精品</text>
+            <text>优选</text>
+            <text>热销</text>
+          </view>
+        </view>
+     </view> 
+    </block>  
+    <!--列表菜品结束  -->
+    </view>
+</view>

@@ -1,0 +1,27 @@
+常用的快捷键：
+Ctrl+[， Ctrl+]：代码块缩进
+Shift+Alt+F：代码格式化
+alt+键盘上键  单行上移，下移相反
+Shift+Alt+Up，Shift+Alt+Down：向上向下复制一行
+Ctrl+Shift+Enter：在当前行上方插入一行
+Ctrl + /：注释当前行 再按取消注释
+光标相关
+　　Ctrl+End：移动到文件结尾
+
+　　Ctrl+Home：移动到文件开头
+    
+    注意：上面两个可以单独移动一个整块，比如一个标签单词view
+
+　　Ctrl+i：选中当前行
+
+　　Shift+End：选择从光标到行尾(一直按住enter往后选中)
+
+　　Shift+Home：选择从行首到光标处
+
+　　Ctrl+Shift+L：选中所有匹配
+
+　　Ctrl+D：选中匹配
+    
+    Alt+光标 ：选中多个光标位置
+
+　　Ctrl+U：光标回退

@@ -1,0 +1,27 @@
+<!--pages/zc/zc.wxml-->
+<!--pages/zc/zc.wxml-->
+<view class="container">
+    <view class="itembox">
+      <view class="header">
+          欢迎注册春风食里
+      </view>
+      
+      <view class="formbox">
+          <view class="fitem first"><text>账号：</text><input type="text" bindinput="fninputeditusername" placeholder="必填"  placeholder-class="input-placeholder"/></view>
+          <view class="fitem"><text>密码：</text><input type="password" bindinput="fninputeditpassword" placeholder="必填"/></view>
+          <view class="fitem"><text>确认密码：</text><input type="password" bindinput="fninputeditrepassword" placeholder="必填"/></view>
+          <view class="fitem"><text>手机号码：</text><input type="number" bindinput="fninputedittel" placeholder="必填"/></view>
+          <view class="fitem"><text>地址：</text><input type="text" bindinput="fninputeditadd" placeholder="必填"/></view>
+          <view class="fitem"><text>真实姓名：</text><input type="text" bindinput="fninputedittruename" placeholder="必填"/></view>
+          <view class="fitem lastitem" bindtap="fngetimg">
+          <text>上传头像：</text>
+          <view class="imgload">+<image src="{{imgurlbase}}"></image></view>
+          </view>
+          <view class="zhuce" bindtap="fnzhuce">注册</view>
+          <!-- <view class="btnreg" hover-class="hoverclass" bindtap="fnzhuce">注册</view>    -->
+          
+          <view class="msg" hover-class="hoverclass" bindtap="fngotoreg">{{msg}}</view>
+      </view>
+    </view>
+</view>
+

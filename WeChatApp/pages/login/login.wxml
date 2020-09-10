@@ -1,0 +1,16 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+    <view class="itembox">
+      <view class="header">
+          欢迎登录春风食里小程序系统
+      </view>
+       <view class="formbox">
+          <view class="fitem first"><text>账号：</text><input type="text" bindinput="fninputeditusername" placeholder="必填"/></view>
+          <view class="fitem"><text>密码：</text><input type="password" bindinput="fninputeditpassword" placeholder="必填"/></view>
+          <view class="btnreg" hover-class="hoverclass" bindtap="fnlogin">登录</view>   
+          <view class="btnreg" hover-class="hoverclass" bindtap="fngotoreg">没有账号?去注册</view>   
+           <view class="msg" hover-class="hoverclass" bindtap="fngotoreg">{{msg}}</view>  
+      </view>
+    </view>
+</view>
+

@@ -1,0 +1,66 @@
+/* pages/myorder/myorder.wxss */
+/* pages/myorder/myorder.wxss */
+.container{
+    background-color: #fff;
+  }
+  .prolistbox{
+    width: 100%;
+  }
+  .proitem{
+    margin:30rpx;
+    margin-top: 0;
+    border-bottom-right-radius: 10rpx;
+    border-bottom-left-radius: 10rpx;
+    box-shadow: 0 0 3rpx 0 rgba(0, 0,0, 0.5);
+    padding-bottom: 50rpx;
+    position: relative;
+  }
+  .proitem image{
+    width: 100%;
+  }
+  .proname{
+    font-size: 45rpx;
+    border-bottom: dashed 1px #eee;
+    margin: 10rpx 10rpx;
+    padding: 10rpx 0;
+  
+  }
+  
+  .price{
+    color: #ff6600;
+    padding-left: 10rpx;
+  }
+  .price{
+    color: #ff6600;
+    padding-left: 10rpx;
+    margin-right: 10rpx;
+  }
+  .number{
+    color: #ff6600;
+   
+  }
+  .btnshow{
+    width:160rpx;
+    text-align: center;
+    height:60rpx;
+    line-height:60rpx;
+    background-color: #eee;
+    color: #333;
+    position: absolute;
+    right: 20rpx;
+    bottom:60rpx;
+    border-radius: 5rpx;
+    padding:20rpx 25rpx;
+  }
+  
+  .itemhover{
+    box-shadow: 0 0 15rpx 1rpx rgba(0, 0,0, 0.3);
+  }
+  
+  .a1{
+    color:rgb(129, 128, 128);
+    padding: 0 10rpx;
+  }
+  
+  
+  

@@ -1,0 +1,21 @@
+<!--pages/myself/myself.wxml-->
+<!-- 用户信息开始 -->
+<view class="user_infor">
+  <view>{{username}}</view>
+  <view>欢迎您光临春风食里！</view>
+  <image src="{{userimg}}" mode="widthFix"></image>
+</view>
+<!-- 用户信息结束 -->
+<!-- 详情列表开始 -->
+<view class="item" hover-class="hoveritem" bindtap="fngotomyorder">
+   <image src="/pages/img/my_17.png" mode="widthFix"/><view class="rightbox">我的订单
+   <image src="/pages/img/my02_19.png" mode="widthFix" ></image>
+   </view>
+</view>
+<view class="item" hover-class="hoveritem" bindtap="fngotomessage">
+   <image src="/pages/img/my_27.png" mode="widthFix"/><view class="rightbox">在线留言<image src="/pages/img/my02_19.png" mode="widthFix" ></image></view>
+</view>
+<view class="item" hover-class="hoveritem" bindtap="fnlogout">
+   <image src="/pages/img/my_37.png" mode="widthFix"/> <view class="rightbox">退出系统<image src="/pages/img/my02_19.png" mode="widthFix" ></image></view>
+</view>
+<!-- 详情列表结束 -->

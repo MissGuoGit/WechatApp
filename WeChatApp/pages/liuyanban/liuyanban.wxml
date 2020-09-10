@@ -1,0 +1,27 @@
+<!--pages/liuyanban/liuyanban.wxml-->
+<!--pages/liuyanban/liuyanban.wxml-->
+<view class="btn clear"  catchtap="addmessage"><image class="xie" src="/pages/img/xie.png" mode="widthFix"/></view>
+<view style="clear:both;"></view>
+ <block wx:for="{{msglist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+    <view class="boxaa clear">
+        <view class="item" hover-class="hoveritem" bindtap="fngotomyorder">
+            <image src="{{item.userimg}}" mode="widthFix"/>
+            <view class="rightbox">
+            <view class="rightbox1">{{item.username}}</view>
+            <view class="rightbox2">{{item.currenttime}}</view>
+            </view>
+        </view>
+        <view class="boxbb">{{item.msgcontain}}</view>    
+    </view>
+</block> 
+
+<view class="message" hidden="{{hidden}}">
+  <view class="bindaabb">
+    <view class="bindaa" bindtap="notsend"><image class="aa" src="/pages/img/cuo.png" mode="widthFix"/></view>
+    <view class="bindcc">写留言</view>
+    <view class="bindbb" bindtap="sendmessage">提交</view>
+  </view>
+<!-- <view class="contain"><input type="text" bindinput="contain" placeholder="我要说一下"/></view> -->
+<view class="contain"><textarea  bindinput="getcontain" value="{{msgcontain}}"></textarea></view>
+
+</view>

@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+
+tr.sum td{
+    	font-weight: bolder;
+    	color: red;
+    	background-color: #eee;
+    }
+    
+tr.head td{
+	font-weight: bolder;
+	color:#000000;
+	background-color:#eee;
+}
+
+.pager {
+        height:30px;
+        line-height:30px;
+        border:solid 1px #eee;
+        margin:2px;
+        padding-left:3px;
+        font-size:12px;
+        
+    }
+
+        .pager a {
+            text-decoration:none;
+            color:#000;        
+        }
+
+td.width50 {
+    width:50px;
+}

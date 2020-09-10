@@ -1,0 +1,13 @@
+<!--pages/payok/payok.wxml-->
+<view class="payok">
+    <image src=""></image>
+    <view class="text">支付成功</view>
+</view>
+<!-- <view class="msg">若账单状态未及时更新，请耐心等待，谢谢谅解！</view> -->
+<text>若账单状态未及时更新，请耐心等待，谢谢谅解！</text>
+<view class="btn-area">
+    完成
+</view>
+<view class="btn-area success">
+    支付成功
+</view>

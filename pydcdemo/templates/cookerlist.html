@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../static/myadmin/css/comm.css"/>
+        <style type="text/css">
+            *{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family:"微软雅黑";
+	font-size: 14px;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+ul{
+	list-style: none;
+}
+
+h3{
+
+	line-height: 38px;
+}
+
+.tb{
+	width:calc(100% - 10px);
+	border-collapse: collapse;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.tb td{
+	border: solid 1px #eee;
+	height:30px;
+	padding-left: 5px;
+}
+
+.tb td.lable{
+	width: 100px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+
+
+.tb input{
+	width:300px;
+	height: 20px;
+}
+
+textarea{
+	width: 650px;
+	height:200px;
+	margin: 3px 0;
+}
+.path{
+	height: 30px;
+	width:200px;
+	text-align:center;
+	line-height:30px;
+	background:#0293ae;
+	margin-left: 5px;
+	line-height: 30px;
+	color: white;
+	margin:10px 20px;
+}
+
+.tblis tr:hover{
+	background-color: #72BB8D;
+	color: white;
+}
+
+.tblis tr:hover a{
+
+	color: white;
+}
+
+.tblis td{
+	text-align: center;
+}
+
+.tblis td.tdleft{
+	text-align: left;
+}
+
+.tblis td a{
+	margin-left:5px;
+}
+
+#btnsave{
+	width: 80px;
+	height: 26px;
+}
+        </style>
+	</head>
+	<body>
+			<p class="path">当前位置：点餐系统/厨师列表</p>
+			<table border="0" cellspacing="0" cellpadding="0" class="tb tblis">
+				<tr><td style="width: 150px;">厨师照片</td><td style="width: 150px;">厨师名字</td><td style="width: 100px;">厨师级别</td><td style="width: 200px;">特色菜</td><td>简介</td><td style="width: 150px;">操作</td></tr>
+				{% for item in cookerlist %}
+                <tr><td style="text-align: center;padding:5px 0;"> <img src="/static/uploadimg/{{ item.imgurl }}" style="width: 120px;height: 100px;border: solid 1px #eee;"/></td><td>{{ item.cookername }}</td><td>{{ item.cookerlevel }}</td><td>{{ item.specialfood }}</td><td>{{ item.cookerbreif}}</td><td><a href="/cookeredit/?id={{ item.id }}">修改</a><a href="/cookerdelete/?id={{ item.id }}">删除</a></td></tr>
+			    {% endfor %}
+            </table>
+
+	</body>
+</html>

@@ -1,0 +1,87 @@
+/* pages/foodlist/foodlist.wxss */
+.searchbox{
+    width:calc(100% - 40rpx);
+    height:90rpx;
+    background-color:rgb(248, 248, 248);
+    margin:0 auto;
+    border-radius: 45rpx;
+    position: relative;/*给图标的父容器加一个相对定位的属性，把他作为定位的参考对象。*/
+  }
+  
+  .searchbox input{
+    height: 90rpx;
+    margin: 0 100rpx;
+  }
+  
+  .searchbox image{
+    width: 50rpx;
+    position: absolute;
+    left:20rpx;
+    top:22rpx;
+  }
+  page{
+    width: 100%;
+    height: 100%;
+  }
+  
+/* 搜索栏结束 */
+
+/* 菜单列表开始 */
+.food_list{
+    width: 100%;
+    height: calc(100% - 90rpx);
+    /* background-color: red; */
+    overflow-y: scroll;
+    /* 提供滚轮裁切，y轴方向上超出部分滚动 */
+}
+.list_item{
+  height:270rpx;
+  border-bottom: solid 1px #f1f1f1;
+  position: relative;
+}
+.list_item image{
+   width: 220rpx;
+   margin: 20rpx;
+}
+.list_item .food_infor{
+   width: calc(100% - 260rpx);
+   position: absolute;
+   top: 0;
+   right: 0;
+   /* background-color: rgb(175, 175, 253); */
+}
+.food_infor view:nth-of-type(1){
+    font-size: 45rpx;
+    font-weight: bold;
+    padding-top: 10rpx;
+}
+.food_infor view:nth-of-type(2){
+    color: #898989;
+}
+.food_infor view:nth-of-type(3){
+    color: #F76558;
+    line-height:70rpx;
+}
+.text text{
+    margin-right: 10rpx; 
+    padding:2rpx 10rpx;
+    font-size: 26rpx; 
+}
+.text text:nth-of-type(1){
+    border:solid 1px #E0C99F;
+    color: #E0C99F;
+   
+}
+.text text:nth-of-type(2){
+    border:solid 1px #00B26A;
+    color: #00B26A;
+}
+.text text:nth-of-type(3){
+    border:solid 1px rgb(224, 59, 67);
+    color: rgb(224, 59, 67);
+}
+/* 菜单列表结束 */
+/* hover效果 */
+.itemhover{
+    background-color: #eee;
+  }

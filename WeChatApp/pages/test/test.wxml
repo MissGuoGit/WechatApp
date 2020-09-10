@@ -1,0 +1,15 @@
+<!--pages/test/test.wxml-->
+<!-- <view>{{getdata}}</view>
+<view class="btn" bindtap="clickfun">点击一下查询数据</view>
+<input type="text" bindinput="inputfun"></input>
+<view class="btn" bindtap="savefun">保存数据到msg</view>
+<view>{{msg}}{{globalmsg}}</view>
+<view class="btn" bindtap="jumpfun">跳转页面</view>
+
+<view>11111</view>
+<view></view>
+
+<view class="btn" bindtap="imgupload">上传一张头像</view> -->
+
+<view class="imgshow"><image src="../img/timg.gif"></image></view>
+<view class="tishi" bindtap="dianj"><image src="../img/go.jpg"> </image> <text>进入首页</text></view>

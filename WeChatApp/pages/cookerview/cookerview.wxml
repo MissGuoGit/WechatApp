@@ -1,0 +1,40 @@
+<!--pages/cookerview/cookerview.wxml-->
+
+<!-- 头部主要介绍开始 -->
+
+    <view class="top clear">
+        <view class="left clear">
+            <image src="{{imgurl}}" mode="scaleToFill"></image>
+        </view>
+        <view class="right clear">
+            <view>{{cookername}}</view>
+            <view>{{cookerlevel}}</view>
+            <view> <text>特色菜:</text> {{specialfood}}</view>
+        </view>
+    </view>
+<!-- 头部主要介绍结束 -->
+
+ <view class="brief" style="word-break:break-all; ">{{cookerbreif}}
+ </view>
+
+  <view class="food_list">
+    <!-- 列表单个菜品 -->
+    <block wx:for="{{foodlist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+     <view class="list_item clear" hover-class="itemhover" data-id="{{item.id}}" bindtap="fngotofoodview">
+       <image src="http://127.0.0.1:8000/static/uploadimg/{{item.imgurl}}" mode="widthFix" />
+        <view class="food_infor">
+          <view>{{item.proname}}</view>
+          <view>{{item.brief}}</view>
+          <view>￥{{item.price}}/份</view>
+          <view class="text">
+            <text>精品</text>
+            <text>优选</text>
+            <text>热销</text>
+          </view>
+        </view>
+     </view> 
+    </block>  
+    <!--列表菜品结束  -->
+    </view>
+ 
+ <!-- <view class="footer" hover-class="hoverclass" bindtap="gotofoodlist">进入菜单页面选餐</view> -->

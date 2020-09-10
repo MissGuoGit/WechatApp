@@ -1,0 +1,184 @@
+/**index.wxss**/
+
+.ppt{
+  width: 100%;
+  position: relative;
+}
+.ppt image{
+  width: 100%;
+}
+
+/* 导航图标样式开始 */
+.iconbox{
+  width: 100%;
+  height:130rpx;
+  padding-top: 100rpx;
+}
+.iconitem1{
+  width: 33.3%;
+  height:150rpx;
+  float:left;
+  text-align: center;
+}
+
+.iconitem2{
+  width: 33.3%;
+  height:130rpx;
+  float:left;
+  text-align: center;
+  line-height: 130rpx;
+}
+
+.iconitem3{
+  width: 33.3%;
+  height:130rpx;
+  float:right;
+  text-align: center;
+  line-height: 130rpx;
+}
+.iconitem1aa{
+  width: 33.3%;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+}
+.iconitem1bb{
+  width: 33.3%;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  margin: 0 auto;
+  font-size: 30rpx;
+}
+
+
+.hovertag{
+  opacity: 0.6;/*把不透明度设置为0.6*/
+}
+/* 导航图标样式结束 */
+
+.ad1{
+  width: 100%;
+  margin-top: 25rpx;
+}
+
+.ad1 image{
+  width: 100%;
+}
+
+/* 优选名厨开始 */
+.cookerbox{
+  width: 100%;
+}
+
+.cookeheader{
+  width: 100%;
+}
+
+.cookerlistbox{
+  width: 100%;
+  height: 370rpx;
+  display: flex;/*表示这个盒子布局的方式为弹性盒子布局*/
+}
+
+.cookeritem{
+  flex: 1;
+  border: solid 1rpx #ccc; 
+  margin:20rpx;
+  border-radius:8rpx;
+  overflow: hidden;/*超出容器的部分就隐藏*/
+  box-shadow: 0 0 20rpx 2rpx rgb(0, 0, 0,0.3);
+}
+
+.cookeritem image
+{
+  width: 100%;
+}
+
+.cookeritem text{
+  display: block;/*把行内元素转为块级元素 就可以对它设置宽高了*/
+  width: 100%;
+  text-align: center; /* 让文字在容器内居中 */
+}
+
+/* 优选名厨结束 */
+
+
+/* 优选餐宴开始 */
+.foodbox{
+  width: 100%;
+  margin-top: 50rpx;
+  height:850rpx;
+}
+
+.foodtitle{
+  width: 100%;
+  display: block;
+}
+
+.foodlistbox{
+  padding-top:20rpx;
+  width: 100%;
+  height:750rpx;
+}
+
+.fooditem{
+  width:calc(50% - 20rpx);
+  height:360rpx;
+  float: left;
+  margin:10rpx;
+  border-radius: 8rpx;
+  overflow: hidden;
+  box-shadow: 0 0 20rpx 2rpx rgb(0, 0, 0,0.3);
+}
+
+.fooditemhover{
+  opacity: 0.6;/*不透明度调整为0.6*/
+}
+
+.fooditem image{
+  width: 100%;
+  height:220rpx;
+}
+.foodname{
+  font-weight: bold;
+  padding-left:10rpx;
+  padding-top: 10rpx;
+  display: block;
+}
+.foodprice{
+  display: block;
+  color: #E6706C;
+  padding-left:10rpx;
+  padding-top:10rpx;
+}
+/* 优选餐宴结束 */
+
+.companyinfo{
+  width: 100%;
+}
+.companyinfo image{
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+
+.searchbox{
+  width:calc(100% - 40rpx);
+  height:90rpx;
+  border: solid 1px #eee;
+  position: absolute;
+  left: 20rpx;
+  bottom: -45rpx;
+  border-radius:45rpx; 
+  background-color: #fff;
+  z-index: 100;
+  opacity: 0.8;
+}
+.searchbox input{
+  height: 90rpx;
+  padding-left: 20rpx;
+  text-align: center;
+}
+
+
+

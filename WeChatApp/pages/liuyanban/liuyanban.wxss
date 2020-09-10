@@ -1,0 +1,148 @@
+/* pages/liuyanban/liuyanban.wxss */
+/* pages/my/my.wxss */
+.clear::after{content: "";display: block;clear:both;}
+.btn{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: burlywood;
+  color: white;
+  border-radius: 50rpx;
+  margin-bottom: 30rpx;
+  line-height: 100rpx;
+  text-align: center;
+  position: fixed;
+  right: 60rpx;
+  bottom: 60rpx;
+  z-index: 1000;
+  
+}
+.xie{
+  height: 50rpx;
+  width: 50rpx;
+  margin-top: 25rpx;
+}
+.boxaa{
+  border-bottom: solid 1rpx #eee;
+}
+
+
+.item{
+margin-bottom: 10rpx;
+position: relative;
+}
+
+.item image{
+width:80rpx;
+border-radius: 50%;
+line-height: 110rpx;
+margin-top: 20rpx;
+margin-left: 20rpx;
+}
+
+.item .rightbox{
+  width:calc(100% - 120rpx);
+  height: 110rpx;
+ line-height: 110rpx;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* z-index: 10; */
+}
+
+.item .rightbox1{
+  width:calc(100% - 120rpx);
+  height: 80rpx;
+  line-height: 80rpx;
+  right: 0;
+  bottom: 0;
+  /* z-index: 10; */
+ 
+}
+
+.item .rightbox2{
+  width:calc(100% - 120rpx);
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 22rpx;
+  right: 30rpx;
+  bottom: 0;
+  color: rgb(221, 164, 89);
+  /* z-index: 10; */
+
+}
+
+
+.boxaa .boxbb{
+margin-top: 6rpx;
+ margin: 0 20rpx 10rpx 20rpx;
+ font-size: 32rpx;
+ text-indent: 2em;
+ line-height: 45rpx;
+ font-size: 28rpx;
+}
+.message{
+  width: 100%;
+  /* height: 200rpx; */
+  background-color: #eee;
+  /* border: solid 1px #eee; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  border-radius: 20rpx;
+}
+.contain{
+  height: 500rpx;
+  width: 100%;
+  border-radius: 10rpx;
+  /* background-color: red; */
+  overflow: hidden;
+}
+.contain textarea{
+  width: 90%;
+  height: 90%;
+  margin:0 auto;
+  margin-top: 30rpx;
+  /* background-color: green; */
+  box-sizing: border-box;
+}
+.bindaabb{
+  width: 100%;
+  /* margin-bottom: 10rpx; */
+  height: 100rpx;
+}
+.bindaabb .bindaa{
+  width:20%;
+  height: 100rpx;
+  text-align:center;
+  float:left;
+  line-height: 100rpx;
+  
+}
+
+.aa{
+  line-height: 100rpx;
+  margin-top: 30rpx;
+  height: 50rpx;
+  width: 50rpx;
+}
+  .bindaabb .bindbb{
+    width:12%;
+    height: 70rpx;
+    float: right;
+    text-align:center;
+    /* margin-left: 90rpx; */
+    background-color: burlywood;
+    line-height: 70rpx;
+    border-radius: 20rpx;
+    margin-top: 30rpx;
+    margin-right: 20rpx;
+    font-size: 30rpx;
+  }
+  .bindaabb .bindcc{
+    height: 100rpx;
+    width: 60%;
+    float: left;
+    text-align: center;
+    line-height: 120rpx;
+  }

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a3b86a04-c3e8-4860-bb27-daba0e6210b3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1c9Z2wh7pNMsYj35ZJ35PrvjZJs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\pydcdemo\static\uploadimg" />
+      <recent name="D:\pydcdemo\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pydcdemo\static\myadmin\img" />
+      <recent name="D:\pydcdemo\static\uploadimg" />
+      <recent name="D:\pydcdemo\static" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3b86a04-c3e8-4860-bb27-daba0e6210b3" name="Default Changelist" comment="" />
+      <created>1589942565390</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589942565390</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="227" y="68" key="FileChooserDialogImpl" timestamp="1592357768288">
+      <screen x="0" y="0" width="1511" height="810" />
+    </state>
+    <state x="227" y="68" key="FileChooserDialogImpl/0.0.1511.810@0.0.1511.810" timestamp="1592357768288" />
+    <state x="249" y="89" key="SettingsEditor" timestamp="1592485816032">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="245" y="87" key="SettingsEditor/0.0.1511.810@0.0.1511.810" timestamp="1590804623599" />
+    <state x="249" y="89" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1592485816032" />
+    <state x="424" y="286" key="com.intellij.ide.util.TipDialog" timestamp="1592484781004">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="417" y="281" key="com.intellij.ide.util.TipDialog/0.0.1511.810@0.0.1511.810" timestamp="1592439642313" />
+    <state x="424" y="286" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1592484781004" />
+    <state x="873" y="9" width="638" height="801" key="find.popup" timestamp="1592138168339">
+      <screen x="0" y="0" width="1511" height="810" />
+    </state>
+    <state x="873" y="9" width="638" height="801" key="find.popup/0.0.1511.810@0.0.1511.810" timestamp="1592138168339" />
+    <state x="413" y="131" width="672" height="678" key="search.everywhere.popup" timestamp="1590484096209">
+      <screen x="0" y="0" width="1511" height="810" />
+    </state>
+    <state x="413" y="131" width="672" height="678" key="search.everywhere.popup/0.0.1511.810@0.0.1511.810" timestamp="1590484096209" />
+  </component>
+</project>

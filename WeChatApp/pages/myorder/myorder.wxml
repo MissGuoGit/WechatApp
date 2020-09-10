@@ -1,0 +1,25 @@
+<!--pages/myorder/myorder.wxml-->
+<view class="container">
+   <view class="prolistbox">
+   <!-- 订单单个显示开始 -->
+   <!-- {{orderlist}} -->
+   <block wx:for="{{orderlist}}"   wx:for-index="index" wx:for-item="item">
+       <!-- <view> {{item.proname}}</view> -->
+        <view class="proitem" bindtap="fngotoorder" data-id="" hover-class="itemhover" style="margin-top:20rpx;">
+          <image src="{{item.imgurl}}"  mode="widthFix"/>
+          <view class="proname">{{item.proname}} ￥{{item.price}} 数量：{{item.procount}}份</view>
+          <view class="info">
+              <view class="a1">订单号：{{item.orderid}}</view>
+              <view class="a1">姓名：{{item.sname}}</view>
+              <view class="a1">电话：{{item.stel}}</view>
+              <view class="a1">地址：{{item.saddress}}</view>              
+              <view class="a1">烹饪：{{item.ptime}}</view>
+              <view class="a1">下单：{{item.ctime}}</view>
+              <view class="a1">备注：{{item.memo}}</view>
+          </view>
+        </view> 
+     </block>
+<!-- 订单单个显示结束 -->
+   </view> 
+</view>
+

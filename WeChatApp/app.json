@@ -1,0 +1,58 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/test/test",
+        "pages/liuyanban/liuyanban",
+        "pages/zc/zc",
+        "pages/shopcar/shopcar",
+        "pages/myorder/myorder",
+        "pages/cookerview/cookerview",
+        "pages/login/login",
+        "pages/foodview/foodview",
+        "pages/myself/myself",
+        "pages/foodlist/foodlist",
+        "pages/payok/payok",
+        "pages/logs/logs",
+        "pages/cooker/cooker"
+       
+       
+       
+    ],
+    "tabBar": {
+        "list": [
+            {
+                "selectedIconPath": "pages/img/shouye(2).png",
+                "iconPath": "pages/img/shouye(1).png",
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "pages/img/food(2).png",
+                "iconPath": "pages/img/food(1).png",
+                "pagePath": "pages/foodlist/foodlist",
+                "text": "菜品"
+            },
+            {
+                "selectedIconPath": "pages/img/shopcar(1).png",
+                "iconPath": "pages/img/shopcar.png",
+                "pagePath": "pages/shopcar/shopcar",
+                "text": "购物车"
+            },
+            {
+                "selectedIconPath": "pages/img/mytab(2).png",
+                "iconPath": "pages/img/mytab(1).png",
+                "pagePath": "pages/myself/myself",
+                "text": "我的"
+            }
+        ]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "春风十里",
+        "navigationBarTextStyle": "black"
+        
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

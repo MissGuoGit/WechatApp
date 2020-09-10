@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>订单详情</title>
+      <link rel="stylesheet" type="text/css" href="../static/admin/css/comm.css"/>
+        <style type="text/css">
+            table.tblis td{
+                text-align: left;
+            }
+            table.tblis td.lb{
+                width:191px;
+                text-align: right;
+                padding-right:5px;
+            }
+            *{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family:"微软雅黑";
+	font-size: 14px;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+ul{
+	list-style: none;
+}
+
+h3{
+
+	line-height: 38px;
+}
+
+.tb{
+	width:calc(100% - 10px);
+	border-collapse: collapse;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.tb td{
+	border: solid 1px #eee;
+	height:30px;
+	padding-left: 5px;
+}
+
+.tb td.lable{
+	width: 100px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+
+
+.tb input{
+	width:300px;
+	height: 20px;
+}
+
+textarea{
+	width: 650px;
+	height:200px;
+	margin: 3px 0;
+}
+.path{
+	height: 30px;
+	width:200px;
+	text-align:center;
+	line-height:30px;
+	background:#0293ae;
+	margin-left: 5px;
+	line-ffnnheight: 30px;
+	color: white;
+	margin:10px 20px;
+}
+
+.tblis tr:hover{
+	background-color: #72BB8D;
+	color: white;
+}
+
+.tblis tr:hover a{
+
+	color: white;
+}
+
+.tblis td{
+	text-align: center;
+}
+
+.tblis td.tdleft{
+	text-align: left;
+}
+
+.tblis td a{
+	margin-left:5px;
+}
+
+#btnsave{
+	width: 80px;
+	height: 26px;
+}
+        </style>
+   </head>
+   <body>
+         <div class="path">当前位置：点餐系统/订单详情</div>
+
+            <table border="0" cellspacing="0" cellpadding="0" class="tb tblis" style="margin-bottom: 3px;">
+                <tr><td class="lb">订单号：</td><td>{{obj.orderid }}</td></tr>
+                <tr><td class="lb">总价：</td><td>￥{{ obj.sumprice }}.00</td></tr>
+                <tr><td class="lb">收货人：</td><td>{{obj.sname}}</td></tr>
+                <tr><td class="lb">地址：</td><td>{{ obj.saddress }}</td></tr>
+                <tr><td class="lb">电话：</td><td>{{ obj.stel }}</td></tr>
+                <tr><td class="lb">下单时间：</td><td>{{ obj.ctime }}</td></tr>
+                <tr><td class="lb">送货时间：</td><td>{{ obj.ptime }}</td></tr>
+            </table>
+         <table border="0" cellspacing="0" cellpadding="0" class="tb tblis">
+            <tr><td style="width: 50px;">ID</td><td style="width: 120px;">图片</td><td>菜品名称</td><td style="width: 150px;">单价</td><td style="width: 150px;">数量</td><td style="width: 150px;">总价</td></tr>
+            {% for item in obj.items %}
+                <tr>
+                    <td>{{ item.id}}</td>
+                    <td> <img src="/static/uploadimg/{{ item.imgurl }}" style="width: 120px;height: 60px;margin:5px 10px; "/></td>
+                    <td>{{ item.proname }}</td>
+                    <td>{{ item.price }}.00</td>
+                    <td>{{ item.procount }}</td>
+                    <td>￥{{ item.price}}.00</td>
+                </tr>
+             {% endfor %}
+            </table>
+
+   </body>
+</html>

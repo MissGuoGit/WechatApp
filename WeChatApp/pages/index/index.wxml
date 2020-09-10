@@ -1,0 +1,84 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- 轮播模块开始 -->
+      <view class="ppt">
+        <view class="page-section page-section-spacing swiper">
+          <swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
+
+            <block wx:for="{{pptlist}}"  wx:key="key"   wx:for-index="index" wx:for-item="item">
+              <swiper-item>
+                <view class="swiper-item"><image src="http://127.0.0.1:8000/static/uploadimg/{{item.imgurl}}" mode="widthFix"/></view>
+              </swiper-item>
+            </block> 
+              
+          </swiper>
+        </view>
+        <view class="searchbox">
+            <input type="text"  placeholder="搜美食，菜谱" bindinput="fnedit" bindconfirm="fnsearch"/>
+        </view>
+      </view>
+    <!-- 轮播模块结束 -->
+
+    <!-- 导航开始 -->
+    <view class="iconbox">
+      <view class="iconitem1" bindtap="gotofoodlist">
+          <image  class="iconitem1aa" src="/pages/img/d-66.png" mode="widthFix"/>
+          <view class="iconitem1bb">菜品</view>
+      </view>
+      <view class="iconitem1" bindtap="gotocookerlist">
+          <image  class="iconitem1aa" src="/pages/img/cooker(2).png" mode="widthFix"/>
+          <view class="iconitem1bb">厨师</view>
+      </view>
+      <view class="iconitem1" bindtap="gotoorderlist">
+          <image  class="iconitem1aa" src="/pages/img/d-33.png" mode="widthFix"/>
+          <view class="iconitem1bb">订单</view>
+      </view>
+
+    </view>
+    <!-- 导航结束 -->
+    
+    <view class="ad1"><image src="/pages/img/ad1.jpg" mode="widthFix"/></view>
+
+
+    <!-- 优选名厨开始 -->
+    <view class="cookerbox">
+        <image src="/pages/img/t1.jpg" mode="widthFix" class="cookeheader"/>
+        <view class="cookerlistbox">
+        <block wx:for="{{cookerlist}}" wx:key="key1"  wx:for-index="index" wx:for-item="item">
+            <view class="cookeritem" bindtap="fngotocookerview" data-id="{{item.id}}" hover-class="fooditemhover">
+                <image src="http://127.0.0.1:8000/static/uploadimg/{{item.imgurl}}" mode="widthFix"/>
+                <text>{{item.cookername}}</text>
+                <image src="/pages/img/star.jpg" mode="widthFix"/>
+            </view>
+        </block>  
+        </view>
+    </view>
+    <!-- 优选名厨结束 -->
+
+     <!-- 优选餐宴开始 -->
+    <view class="foodbox">
+        <image src="/pages/img/t2.jpg" class="foodtitle" mode="widthFix"/>
+        <view class="foodlistbox"> 
+
+            <block wx:for="{{foodlist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+            <view class="fooditem" bindtap="fngotofoodview" data-id="{{item.id}}"  hover-class="fooditemhover">
+                <image src="http://127.0.0.1:8000/static/uploadimg/{{item.imgurl}}"/>
+                <text class="foodname">{{item.proname}}</text>
+                <text class="foodprice">￥{{item.price}}/桌</text>
+            </view>
+          </block>  
+
+        </view>
+    </view>
+    <!-- 优选餐宴结束 -->
+
+    <view class="companyinfo">
+        <image src="/pages/img/bz.jpg" mode="widthFix" />
+    </view>
+
+    <view class="companyinfo">
+        <image src="/pages/img/ddd1.jpg" mode="widthFix" />
+    </view>
+
+
+</view>

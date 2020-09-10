@@ -1,0 +1,47 @@
+/* pages/test/test.wxss */
+.btn{
+    width: 300rpx;
+    height: 50rpx;
+    text-align: center;
+    background: green;
+    color: white;
+    margin: 50rpx;
+}
+input{
+    width: 100%;
+    height: 80rpx;
+    background: #eee;
+}
+/* .
+首页展示
+  */
+.imgshow{
+    width: 100%;
+    margin:0 auto;
+    margin-inline-start: 93rpx;
+    margin-block-start: 200rpx;
+}
+
+.tishi{
+    width: 147rpx;
+    height: 70rpx;
+    /* background-color: green; */
+    border-radius: 3%;
+    color: white;
+    text-align: center;
+    line-height: 70rpx;
+    margin-top: 20rpx;
+    margin-inline-start: 330rpx;
+    margin-block-start: 40rpx;
+    position: relative;
+}
+.tishi image{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+.tishi text{
+    position: absolute;
+    top: 0;
+    left: 8%;
+}

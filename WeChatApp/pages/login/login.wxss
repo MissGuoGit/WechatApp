@@ -1,0 +1,114 @@
+/* pages/login/login.wxss */
+page{
+    width: 100%; 
+   }
+   .itembox{
+     width: 100%;
+   }
+   .header{
+     height: 230rpx;
+     /* background-color:#ff6855; */
+     color: #ff6855;
+     margin: 0 auto;
+     text-align: center;
+     line-height: 230rpx;
+     font-size: 55rpx;
+   }
+   
+   .first{
+    border-top: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+     margin-top: 3rpx;
+   }
+   .first text{ border-bottom: rgb(195, 195, 195) solid 1px; }
+   .username{
+     font-size: 55rpx;
+   }
+   .subtitle{
+     color: #ccc;
+   }
+   .header image{
+     width: 200rpx;
+     position: absolute;
+     right: 10rpx;
+     top: 10rpx;
+     border-radius: 100rpx;
+   }
+   .itembox .item{
+     border-bottom: solid 1px #eee;
+     height:90rpx;
+     line-height:90rpx;
+     padding: 0 20rpx;
+   }
+   .itembox image{
+     width: 200rpx;
+   }
+   
+   .fitem{
+     height:90rpx;
+     border-bottom: solid 1px #eee;
+     position: relative;
+     line-height: 90rpx;
+     padding: 0 20rpx;
+   }
+   
+   .fitem text{
+     width: 160rpx;
+     /* font-weight: bold; */
+     text-align: center;
+     display: inline-block;
+     background-color: #eee;
+   }
+
+   .fitem-big{
+     height:220rpx;
+     border-bottom: solid 1px #eee;
+     position: relative;
+     line-height: 90rpx;
+     padding: 0 20rpx;
+   }
+   
+   .fitem input{
+     width:calc(100% - 220rpx);
+     position: absolute;
+     right: 0;
+     top: 0rpx;
+     height: 80rpx;
+     line-height: 80rpx;
+     text-indent: 12rpx;
+     border-radius: 5rpx;
+    
+   }
+   
+   .fitem-big textarea{
+     width:calc(100% - 220rpx);
+     position: absolute;
+     right: 0;
+     top: 10rpx;
+     line-height:60rpx;
+     max-height: 200rpx;
+   }
+   
+   .btnreg{
+     width:calc(100% - 30rpx);
+     height:80rpx;
+     line-height:80rpx;
+     text-align: center;  
+     border-radius: 10rpx;
+     margin: 0 auto;
+     margin-top: 30rpx;
+     background-color: #ff6855;
+     color: #fff;
+     border: solid 1px #ff6855;
+   }
+   .hoverclass{
+     opacity: 0.6;
+   }
+   .msg{
+     text-align: center;
+     color: red;
+     line-height: 50rpx;
+     padding-top: 20rpx;
+   }
+   
+   

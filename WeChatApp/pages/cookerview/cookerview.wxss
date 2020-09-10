@@ -1,0 +1,121 @@
+/* pages/cookerview/cookerview.wxss */
+.clear::after{content: "";display: block;clear: both;}
+
+.top{
+    width: 100%;
+    height: 300rpx;
+    /* background-color: red; */
+    border-bottom: solid 1px #eee;
+}
+.left{
+    float: left;
+    width: 300rpx;
+    height: 290rpx;
+    overflow: hidden;
+}
+.left image{
+    width: 100%;
+    height: 100%;
+    padding: 20rpx 0 20rpx 20rpx;
+}
+.right{
+   background-color: rgba(236, 236, 236, 0.787);
+    float: right;
+    margin-top: 20rpx;
+    margin-right: 20rpx;
+    padding-bottom: 20rpx;
+    box-sizing: border-box;
+    width: calc(100% - 320rpx);
+    height: 270rpx;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.right view{
+/* background-color: rgb(246, 153, 153);
+border: solid 1px blue; */
+}
+.right view:nth-of-type(1){ font-size: 42rpx;font-weight: bold;}
+.right view:nth-of-type(2){color: rgb(115, 114, 114);font-size:26rpx;}
+.right view:nth-of-type(3) text{font-size: 30rpx;color: #F76558;}
+
+.brief{
+    margin:20rpx;
+    line-height: 50rpx;
+    color: #7F7F7F;
+    max-height: 400rpx;
+    text-indent: 2em;
+    /* background-color: red; */
+}
+/* 菜单列表开始 */
+.food_list{
+    width: 100%;
+    
+    /* background-color: red; */
+    overflow-y: scroll;
+    /* 提供滚轮裁切，y轴方向上超出部分滚动 */
+}
+.list_item{
+  height:270rpx;
+  border-bottom: solid 1px #f1f1f1;
+  position: relative;
+}
+.list_item image{
+   width: 220rpx;
+   margin: 20rpx;
+}
+.list_item .food_infor{
+   width: calc(100% - 260rpx);
+   position: absolute;
+   top: 0;
+   right: 0;
+   /* background-color: rgb(175, 175, 253); */
+}
+.food_infor view:nth-of-type(1){
+    font-size: 45rpx;
+    font-weight: bold;
+    padding-top: 10rpx;
+}
+.food_infor view:nth-of-type(2){
+    color: #898989;
+}
+.food_infor view:nth-of-type(3){
+    color: #F76558;
+    line-height:70rpx;
+}
+.text text{
+    margin-right: 10rpx; 
+    padding:2rpx 10rpx;
+    font-size: 26rpx; 
+}
+.text text:nth-of-type(1){
+    border:solid 1px #E0C99F;
+    color: #E0C99F;
+   
+}
+.text text:nth-of-type(2){
+    border:solid 1px #00B26A;
+    color: #00B26A;
+}
+.text text:nth-of-type(3){
+    border:solid 1px rgb(224, 59, 67);
+    color: rgb(224, 59, 67);
+}
+/* 菜单列表结束 */
+/* .footer{
+    width: 100%;
+    height:88rpx;
+    background-color: #F76558;
+    text-align: center;
+    line-height: 88rpx;
+    color: white;
+    font-size: 36rpx;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  } */
+  
+  .hoverclass{
+    opacity: 0.8;
+  }

@@ -1,0 +1,110 @@
+ body {
+	background-image: url(../img/bg.jpg);
+	font-family: 'Microsoft YaHei';
+	font-size: 14px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+#logincontainer {
+	width: 462px;
+	height: 332px;
+	position: absolute;
+	left:calc(50% - 331px);
+	top:calc(50% - 166px);
+	border: 0;
+	border-radius: 3px;
+	/*color: white;*/
+	background:white;
+
+}
+
+#logincontainer p {
+	line-height: 46px;
+	clear: both;
+}
+
+#logincontainer p span {
+	display: block;
+	float: left;
+}
+
+#logincontainer p span.lablespan {
+	width: 80px;
+	text-align: right;
+	padding-right: 3px;
+}
+
+#logincontainer p span input {
+	height: 28px;
+	border: solid 1px #ff6600;
+	padding-left: 5px;
+	margin-left: 5px;
+	background-color: white;
+	outline: none;
+	border-radius: 5px;
+}
+
+#logincontainer p span input#btnlogin {
+	margin-left: 88px;
+	width: 100px;
+	height: 28px;
+	border: 0;
+	border-radius: 5px;
+	background-color: #D56409;
+	color: white;
+}
+
+#msg {
+	padding-left: 80px;
+	color: red;
+}
+
+#btnsearch {
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	right: 34px;
+	font-size: 16px;
+}
+
+#msglist {
+	width: 350px;
+	height: 500px;
+	border: solid 1px white;
+	position: absolute;
+	right: 50px;
+	top: 50px;
+	list-style: none;
+	border-radius: 5px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+#msglist li {}
+
+#msglist li a {
+	color: white;
+	line-height: 35px;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	height: 35px;
+	overflow: hidden;
+}
+
+#msglist li a:before {
+	content: '>';
+	margin-right: 5px;
+}
+
+.title{
+	margin-top:25px;
+	margin-left:50px;
+	font-size:26px;
+}
+
+.loginform{
+	margin-left: 50px;
+	margin-top:30px;
+}
